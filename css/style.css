@@ -9906,3 +9906,93 @@ img {
     margin-right: auto;
   }
 }
+
+/* Style for the form container */
+.overlay-form {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+/* Style for form input fields and labels */
+.overlay-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.overlay-form input[type="text"],
+.overlay-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.overlay-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.overlay-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style for form parts 1 and 2 */
+.form-part1 {
+  width: 25%;
+  float: left;
+  margin-right: 5%;
+}
+
+.form-part2 {
+  width: 70%;
+  float: left;
+}
+
+/* Clear floating elements */
+.overlay-form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.whatsapp_float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+    .whatsapp-icon {
+      margin-top: 16px;
+    }
+
+    /* for mobile */
+    @media screen and (max-width: 767px){
+      .whatsapp-icon {
+        margin-top: 10px;
+      }
+      .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 150px;
+        right: 10px;
+        font-size: 22px;
+      }
+    }
