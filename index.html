@@ -8,6 +8,7 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -27,8 +28,9 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
 
@@ -68,7 +70,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">
+                            <a href="#footer" class="nav__link">
                                 <i class='bx bx-message-square-detail nav__icon'></i>
                                 <span class="nav__name">Contactme</span>
                             </a>
@@ -125,7 +127,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Solar Energy</h4>
                             <h3 class="display-2 font-secondary text-white mb-4">Innovative Solar Solution For Home</h3>
-                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Get A Quote</a>
+                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#enquiry">For Enquiry</a>
                         </div>
                     </div>
                 </div>
@@ -135,12 +137,12 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Solar Energy</h4>
                             <h3 class="display-2 font-secondary text-white mb-4">Let The Sun Work For Your Home</h3>
-                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Get A Quote</a>
+                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#enquiry">For Enquiry</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+            <!-- <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
                 <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
                     <span class="carousel-control-prev-icon mt-3"></span>
                 </div>
@@ -149,30 +151,225 @@
                 <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
                     <span class="carousel-control-next-icon mt-3"></span>
                 </div>
-            </a>
+            </a> -->
         </div>
     </div> 
     <!-- Carousel End -->
     <a href="https:/wa.me/917306425171"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
 
+
+
+    <!-- form starts -->
+    <div class="EnquiryForm" style="margin-top: -95px" id="enquiry">
+        <div class="form">
+            <div class="contact-info">
+                <div class="row">
+                <iconify-icon icon="tdesign:call-1" style="font-size:30px; color: #22395d;"></iconify-icon><h3 class="ml-2">Call Today</h3>
+            </div>
+                <h2>
+                    1800 25 77777
+                </h2>
+            </div>
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+                <form action="index.html" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span style="color: white;">Enquiry Now</span>
+                            <span class="ml-4" style="color: white;">I'm Looking for</span>
+                            <input   type="radio" name="enquiry_type" value="general" id="enquiry_general" />
+                            <label style="color: white;" for="enquiry_general">Residential</label>
+                            <input type="radio" name="enquiry_type" value="specific" id="enquiry_specific" />
+                            <label style="color: white;" for="enquiry_specific">Non-Residential</label>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" name="name" class="input" placeholder="Name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="input" placeholder="Email" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" name="bill" class="input" placeholder="Monthly Electricity Bill" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="tel" name="phone" class="input" placeholder="Mobile Number" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" name="pin_code" class="input" placeholder="Pin Code" />
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="btnSubmit mt-2" />
+                </form>
+                <span class="text-white">I agree to the Tata Power <a href="https://www.tatapowersolar.com/terms-of-use/" target="_blank">Terms of Use </a></span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- form ends -->
+
+
+
+
+
+
+    <!-- solar benifits starts -->
    
+    <style>
+        /* Define the transition effect on the container element */
+        .icon-container {
+            transition: transform 0.2s; /* Define the transition property */
+        }
+    
+        /* Add a hover effect to the container */
+        .icon-container:hover {
+            transform: scale(1.1); /* Increase the size of the container on hover */
+        }
+    </style>
+    
+    <div class="container" style="margin-top: 2rem;">
+        <div class="col-md-12">
+            <div class="right_step_box">
+                <h1 style="text-align: center">Solar Rooftop Solutions With <br><span>The Trust of Tata Power</span></h1><br><br>
+                <div class="row">
+                    <div class="col-sm-3 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="icon-park-outline:solar-energy" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>Home & Residential Societies</b></span>
+                        <!--<p>Hassle-Free<br>Installations</p-->
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="mdi:home-electricity-outline" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>MSMEs <!--incl. Offices,<br> Shops & Buildings--></b></span>
+                        <!--<p>Save on Power Cost, <br>become more competitive</p-->
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="bi:buildings" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>Commercial & Industrial Establishments</b></span>
+                        <!--<p>Peace of mind throughout the 25 years lifetime</p-->
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="carbon:network-enterprise" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>Large  Enterprises</b></span>
+                        <!--<p>Lead the action on<br>Sustainability</p-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <!-- solar benifits -->
+
+
+
+
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <img class="img-fluid mb-4 mb-lg-0" src="img/about1.png" style="    height: 20rem; width: 20rem;" alt="">
+                    <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpg"  alt="">
                 </div>
                 <div class="col-lg-7">
                     <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">About Us</h6>
-                    <h1 class="display-4 mb-3"><span class="text-primary">25+ Years Experience</span> In Solar Power Industry</h1>
-                    <p>At sed est eirmod sanctus et amet diam magna. Dolore clita magna sed sed stet et, at magna rebum eirmod sanctus ut sed, stet tempor dolore rebum sit duo, dolore tempor sit est sit sanctus, sit justo sit invidunt clita ut justo diam magna. Erat eos nonumy labore dolor. Dolore kasd no et et et elitr. Erat sea dolor elitr diam sed lorem rebum et vero. </p>
+                    <h1 class="display-4 mb-3"><span class="text-primary">5+ Years Experience</span> In Solar Power Industry</h1>
+                    <p>company that provides clean and sustainable energy solutions to customers. Our goal is to reduce our carbon footprint and contribute to a greener future. We believe in promoting the use of renewable energy sources like solar, wind, and hydro power, and providing affordable and accessible energy solutions to everyone. Our mission is to make the world a better place by reducing dependence on fossil fuels and promoting the use of clean and renewable energy.
+                    </p>
                     <a class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#exampleModalLong">Read More</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
+
+
+
+    <!-- advantages starts -->
+
+    <div class="container" style="margin-top: 2rem;">
+        <div class="col-md-12">
+            <div class="right_step_box">
+                <h1 style="text-align: center">The Tata Power Solaroof <span>Advantage</span></h1><br><br>
+                <div class="row">
+                    <div class="col-lg-3 col-6 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="codicon:workspace-trusted" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>30+ years’experience</b></span>
+                        <!--<p>Hassle-Free<br>Installations</p-->
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="fluent-mdl2:product-variant" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>25 years’<br>warranty<span>on modules <!--incl. Offices,<br> Shops & Buildings--></b></span>
+                        <!--<p>Save on Power Cost, <br>become more competitive</p-->
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="eos-icons:trusted-organization" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>Trusted Quality Assurance</b></span>
+                        <!--<p>Peace of mind throughout the 25 years lifetime</p-->
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="vaadin:tools" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>Exclusive sales <br>& service</b></span>
+                        <!--<p>Lead the action on<br>Sustainability</p-->
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="covid:covid19-virus-lifelong-2" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>Lifetime service & aftersales support</b></span>
+                        <!--<p>Lead the action on<br>Sustainability</p-->
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="la:cloud-sun-rain" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>All-weather proof protection & hazard-free installations</b></span>
+                        <!--<p>Lead the action on<br>Sustainability</p-->
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="mdi:solar-power-variant" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>Insurance for Solar Rooftop system</b></span>
+                        <!--<p>Lead the action on<br>Sustainability</p-->
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <div class="icon-container">
+                            <iconify-icon icon="healthicons:electricity-outline" style="font-size:60px;"></iconify-icon>
+                        </div>
+                        <span><b>Up to 50%+ electricity<BR>bill savings</b></span>
+                        <!--<p>Lead the action on<br>Sustainability</p-->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- advantages Ends -->
+
 
 
     <!-- Service Start -->
@@ -235,12 +432,12 @@
             <h1 class="font-secondary display-4 text-white">Project Photo Gallery</h1>
         </div>
         <div class="owl-carousel gallery-carousel">
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/project1.png" alt="">
-                <a class="btn btn-primary" href="img/project2.png" data-lightbox="gallery">
+            <!-- <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <a class="btn btn-primary" href="img/gallery-1.jpgS" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
-            </div>
+            </div> -->
             <div class="gallery-item">
                 <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
                 <a class="btn btn-primary" href="img/gallery-2.jpg" data-lightbox="gallery">
@@ -277,7 +474,7 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-5" id="team">
+    <!-- <div class="container-fluid py-5" id="team">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Team</h6>
@@ -368,7 +565,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team End -->
 
 
@@ -383,23 +580,25 @@
                 <div class="col-md-6 border-right border-primary">
                     <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
                         <h3 class="mb-4">Why Switch to Solar?</h3>
-                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Vero dolor amet no eos ipsum erat</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Lorem tempor tempor gubergren dolor dolor dolor</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Nonumy tempor dolores sadipscing duo</h5>
-                        <h5 class="mb-0"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Kasd dolor ea dolores ut nonumy</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Reduced Electricity Bills</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Low Operating Costs</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Government Incentives</h5>
+                        <h5 class="mb-0"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Environmentally Friendly</h5>
+                        <h5 class="mb-0"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Easy Financing Solutions</h5>
+
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="text-center text-md-left ml-md-3">
                         <h3 class="mb-4">Why Choose Us?</h3>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Vero dolor amet no eos ipsum erat</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Lorem tempor tempor gubergren dolor dolor dolor</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Nonumy tempor dolores sadipscing duo</h5>
-                        <h5 class="mb-0"><i class="fa fa-check text-success mr-2"></i>Kasd dolor ea dolores ut nonumy</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>30,000+ total & 15,000+ residential customers</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Awarded No.1 Solar EPC player for 6 years in a row</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Pan India network of 250+ channel partner</h5>
+                        <h5 class="mb-0"><i class="fa fa-check text-success mr-2"></i>Word class Engineering and Installation</h5>
                     </div>
                 </div>
                 <div class="col-md-12 text-center pt-3">
-                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4 btn-scroll" href="#contact">Get A Quote</a>
+                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4 btn-scroll" href="#enquiry">For Enquiry</a>
                 </div>
             </div>
         </div>
@@ -438,7 +637,7 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
+    <!-- <div class="container-fluid py-5" id="contact">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Contact</h6>
@@ -475,12 +674,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Contact End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" id="footer" style="margin-top: 90px;">
         <div class="row pt-5">
             <div class="col-12 mb-4 px-4">
                 <div class="row mb-5 p-4" style="background: rgba(256, 256, 256, .05);">
@@ -542,7 +741,7 @@
         </div>
     </div>
     <div class="container-fluid bg-dark text-white text-center border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .05) !important;">
-        <p class="m-0 text-white">&copy; <a href="#">Rshus Code</a>. All Rights Reserved. Designed by <a href="https://freewebsitecode.com">Free Website Code</a></p>
+        <p class="m-0 text-white">&copy; <a href="#">Puncha.in</a> All Rights Reserved.
     </div>
     <!-- Footer End -->
 
