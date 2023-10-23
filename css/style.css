@@ -10409,6 +10409,9 @@ img {
     margin: 0 auto; /* This will center the button horizontally */
     text-align: center;
     }
+    .navLogo{
+    width: 4rem;
+    }
   }
 
   @media (min-width: 851px) {
@@ -10416,5 +10419,41 @@ img {
       margin-left: 6rem;
       margin-right: 6rem;
     }
+    .navLogo{
+      width: 5rem;
+    height: 4rem;
+    }
   }
   
+
+  
+
+@keyframes flexAnimation {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.flex-on-load {
+  animation: flexAnimation 2s ease-in-out infinite;
+}
+
+
+@keyframes iconAnimation {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.icon-container {
+  animation: iconAnimation 1s ease-in-out;
+}

@@ -141,3 +141,50 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+
+
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
+function addFlexOnLoadClass() {
+    var rightStepBox = document.querySelector('.right_step_box');
+    if (isElementInViewport(rightStepBox)) {
+        rightStepBox.classList.add('flex-on-load');
+        window.removeEventListener('scroll', addFlexOnLoadClass);
+    }
+}
+
+// Attach the event listener to check when the element is in the viewport
+window.addEventListener('scroll', addFlexOnLoadClass);
+
+
+
+// Function to handle the intersection
+function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            // The section is in the viewport
+            document.querySelector(".icon-container").classList.add("active");
+        } else {
+            // The section is out of the viewport
+            document.querySelector(".icon-container").classList.remove("active");
+        }
+    });
+}
+
+// Create an Intersection Observer
+const observer = new IntersectionObserver(handleIntersection);
+
+// Observe the target element (the section you want to watch)
+const targetElement = document.querySelector(".icon-section");
+observer.observe(targetElement);
+
+
+
+
+
