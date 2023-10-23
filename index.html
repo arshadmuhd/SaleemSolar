@@ -175,14 +175,17 @@
                 <span class="circle two"></span>
                 <form action="index.html" autocomplete="off">
                     <div class="row">
-                        <div class="col-md-12">
-                            <span style="color: white;">Enquiry Now</span>
-                            <!-- <span class="ml-4" style="color: white;">I'm Looking for</span> -->
-                            <input   type="radio" class="ml-4" name="enquiry_type" value="general" id="enquiry_general" />
-                            <label style="color: white;" for="enquiry_general">Residential</label>
-                            <input type="radio" name="enquiry_type" value="specific" id="enquiry_specific" />
-                            <label style="color: white;" for="enquiry_specific">Non-Residential</label>
-                        </div>
+                            <div class="col-md-12">
+                                <span style="color: white;">Enquiry Now</span>
+                                <div class="form-check ml-4">
+                                    <input type="radio" class="form-check-input" name="enquiry_type" value="general" id="enquiry_general" />
+                                    <label class="form-check-label" style="color: white;" for="enquiry_general">Residential</label>
+                                </div>
+                                <div class="form-check ml-4">
+                                    <input type="radio" class="form-check-input" name="enquiry_type" value="specific" id="enquiry_specific" />
+                                    <label class="form-check-label" style="color: white;" for="enquiry_specific">Non-Residential</label>
+                                </div>
+                            </div>
                         <div class="col-md-12">
                             <input type="text" name="name" class="input" placeholder="Name" />
                         </div>
@@ -232,7 +235,7 @@
         }
     </style>
     
-    <div class="container" style="margin-top: 7rem;">
+    <div class="container" style="margin-top: 5rem;">
         <div class="col-md-12">
             <div class="right_step_box">
                 <h1 style="text-align: center">Solar Rooftop Solutions With <br><span>The Trust of Tata Power</span></h1><br><br>
