@@ -186,5 +186,12 @@ observer.observe(targetElement);
 
 
 
+$(document).ready(function () {
+    $('#exampleModalLong').on('click', function (e) {
+        if (e.target === this) {
+            $('#exampleModalLong').modal('hide');
+        }
+    });
+});
 
 
