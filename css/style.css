@@ -10355,6 +10355,10 @@ img {
     .social-media {
       padding: 1.5rem 0 0 0;
     }
+    .navLogo{
+      height: 2rem;
+      width: 2rem;
+    }
   }
   
   @media (max-width: 480px) {
@@ -10410,7 +10414,8 @@ img {
     text-align: center;
     }
     .navLogo{
-    width: 4rem;
+      height: 2rem;
+      width: 2rem;
     }
   }
 
@@ -10420,8 +10425,8 @@ img {
       margin-right: 6rem;
     }
     .navLogo{
-      width: 5rem;
-    height: 4rem;
+      width: 3rem;
+    height: 3rem;
     }
   }
   
@@ -10457,3 +10462,4 @@ img {
 .icon-container {
   animation: iconAnimation 1s ease-in-out;
 }
+
