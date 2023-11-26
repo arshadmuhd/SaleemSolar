@@ -9995,6 +9995,7 @@ img {
         right: 10px;
         font-size: 22px;
       }
+      
     } 
 
     
@@ -10364,9 +10365,9 @@ img {
   @media (max-width: 480px) {
     .EnquiryForm {
       padding: 1.5rem;
-    }
 
-    
+    }
+  
   
     .contact-info:before {
       display: none;
@@ -10428,6 +10429,7 @@ img {
       width: 3rem;
     height: 3rem;
     }
+   
   }
   
 
